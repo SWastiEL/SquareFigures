@@ -1,37 +1,4 @@
 # SquareFigures
-
-SQL-скрипт:
-
-CREATE TABLE p 
-(  
-    FIRST_NAME NVARCHAR(200), 
-    CATE_NAME  NVARCHAR(200) 
-); 
-
-INSERT INTO p (CATE_NAME, FIRST_NAME) VALUES ('A', 'Abricos'); 
-INSERT INTO p (CATE_NAME, FIRST_NAME) VALUES ('B', 'Banana');
-INSERT INTO p (CATE_NAME, FIRST_NAME) VALUES ('', 'Cat');
-
-CREATE TABLE c
-( 
-    FIRST_NAME  NVARCHAR(200),
-    CATE_NAME NVARCHAR(200)
-); 
-
-INSERT INTO c (CATE_NAME, FIRST_NAME) VALUES ('', 'DendiBOOM'); 
-INSERT INTO c (CATE_NAME, FIRST_NAME) VALUES ('E', 'Ezy');
-INSERT INTO c (CATE_NAME, FIRST_NAME) VALUES ('F', 'Abricos');
-INSERT INTO c (CATE_NAME, FIRST_NAME) VALUES ('B', 'Boorg');
-
------------------------------------
-SQL-запрос:
------------------------------------
-SELECT p.FIRST_NAME, c.CATE_NAME
-FROM p,c
-WHERE p.CATE_NAME = c.CATE_NAME
-
-UNION
-
-SELECT c.FIRST_NAME, p.CATE_NAME
-FROM p,c
-WHERE p.FIRST_NAME = c.FIRST_NAME
+Библиотека расчитанна на расчет площади фигуры.
+Присутствуют юнит-тесты.
+Для расчета площади сложной фигуры необходимо разбить ее на простые, расчитать их площадь и сложить(Figures(S1,S2)).
