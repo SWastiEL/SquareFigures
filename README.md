@@ -26,5 +26,12 @@ INSERT INTO c (CATE_NAME, FIRST_NAME) VALUES ('B', 'Boorg');
 -----------------------------------
 SQL-запрос:
 -----------------------------------
-SELECT DISTINCT * FROM p , c 
-WHERE p.CATE_NAME=c.CATE_NAME or p.FIRST_NAME=c.FIRST_NAME;
+SELECT p.FIRST_NAME, c.CATE_NAME
+FROM p,c
+WHERE p.CATE_NAME = c.CATE_NAME
+
+UNION
+
+SELECT c.FIRST_NAME, p.CATE_NAME
+FROM p,c
+WHERE p.FIRST_NAME = c.FIRST_NAME
