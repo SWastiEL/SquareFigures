@@ -1,0 +1,6 @@
+C:\Users\SWastiEL\source\repos\SquareFigures\SquareFigures\bin\Debug\SquareFigures.dll
+C:\Users\SWastiEL\source\repos\SquareFigures\SquareFigures\bin\Debug\SquareFigures.pdb
+C:\Users\SWastiEL\source\repos\SquareFigures\SquareFigures\obj\Debug\SquareFigures.csprojAssemblyReference.cache
+C:\Users\SWastiEL\source\repos\SquareFigures\SquareFigures\obj\Debug\SquareFigures.csproj.CoreCompileInputs.cache
+C:\Users\SWastiEL\source\repos\SquareFigures\SquareFigures\obj\Debug\SquareFigures.dll
+C:\Users\SWastiEL\source\repos\SquareFigures\SquareFigures\obj\Debug\SquareFigures.pdb
