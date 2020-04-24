@@ -1,1 +1,30 @@
 # SquareFigures
+
+SQL-скрипт:
+
+CREATE TABLE p 
+(  
+    FIRST_NAME NVARCHAR(200), 
+    CATE_NAME  NVARCHAR(200) 
+); 
+
+INSERT INTO p (CATE_NAME, FIRST_NAME) VALUES ('A', 'Abricos'); 
+INSERT INTO p (CATE_NAME, FIRST_NAME) VALUES ('B', 'Banana');
+INSERT INTO p (CATE_NAME, FIRST_NAME) VALUES ('', 'Cat');
+
+CREATE TABLE c
+( 
+    FIRST_NAME  NVARCHAR(200),
+    CATE_NAME NVARCHAR(200)
+); 
+
+INSERT INTO c (CATE_NAME, FIRST_NAME) VALUES ('', 'DendiBOOM'); 
+INSERT INTO c (CATE_NAME, FIRST_NAME) VALUES ('E', 'Ezy');
+INSERT INTO c (CATE_NAME, FIRST_NAME) VALUES ('F', 'Abricos');
+INSERT INTO c (CATE_NAME, FIRST_NAME) VALUES ('B', 'Boorg');
+
+-----------------------------------
+SQL-запрос:
+-----------------------------------
+SELECT DISTINCT * FROM p , c 
+WHERE p.CATE_NAME=c.CATE_NAME or p.FIRST_NAME=c.FIRST_NAME;
